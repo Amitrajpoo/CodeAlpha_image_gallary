@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="styled-heading">My Image Gallery</h1>
+    <div class="filter-buttons">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('animals')">Animals</button>
+      <button onclick="filterImages('flowers')">Flowers</button>
+    </div>
+  </header>
+  
+  <div class="gallery">
+    <div class="image-item nature" onclick="openLightbox('nature1.jpeg')">
+      <img src="nature1.jpeg" alt="Nature 1">
+      <p>Nature Image 1</p>
+    </div>
+    <div class="image-item animals" onclick="openLightbox('animal1.jpeg')">
+      <img src="animal1.jpeg" alt="Animals 1">
+      <p>Animal Image 1</p>
+    </div>
+    <div class="image-item flowers" onclick="openLightbox('flower1.jpeg')">
+      <img src="flower1.jpeg" alt="Flowers 1">
+      <p>Flower Image 1</p>
+    </div>
+    <div class="image-item nature" onclick="openLightbox('nature2.jpeg')">
+      <img src="nature2.jpeg" alt="Nature 2">
+      <p>Nature Image 2</p>
+    </div>
+    <div class="image-item animals" onclick="openLightbox('animal2.jpeg')">
+      <img src="animal2.jpeg" alt="Animals 2">
+      <p>Animal Image 2</p>
+    </div>
+    <div class="image-item flowers" onclick="openLightbox('flower2.jpeg')">
+      <img src="flower2.jpeg" alt="Flowers 2">
+      <p>Flower Image 2</p>
+    </div>
+    <div class="image-item nature" onclick="openLightbox('nature3.jpeg')">
+      <img src="nature3.jpeg" alt="Nature 3">
+      <p>Nature Image 3</p>
+    </div>
+    <div class="image-item animals" onclick="openLightbox('animal3.jpeg')">
+      <img src="animal3.jpeg" alt="Animals 3">
+      <p>Animal Image 3</p>
+    </div>
+    <div class="image-item flowers" onclick="openLightbox('flower3.jpeg')">
+      <img src="flower3.jpeg" alt="Flowers 3">
+      <p>Flower Image 3</p>
+    </div>
+    <div class="image-item nature" onclick="openLightbox('nature4.jpeg')">
+      <img src="nature4.jpeg" alt="Nature 4">
+      <p>Nature Image 4</p>
+    </div>
+    <div class="image-item animals" onclick="openLightbox('animal4.jpeg')">
+      <img src="animal4.jpeg" alt="Animals 4">
+      <p>Animal Image 4</p>
+    </div>
+    <div class="image-item flowers" onclick="openLightbox('flower4.jpeg')">
+      <img src="flower4.jpeg" alt="Flowers 4">
+      <p>Flower Image 4</p>
+    </div>
+    <div class="image-item animals" onclick="openLightbox('animal5.jpeg')">
+      <img src="animal5.jpeg" alt="Animals 5">
+      <p>Animal Image 5</p>
+    </div>
+    <div class="image-item flowers" onclick="openLightbox('flower5.jpeg')">
+      <img src="flower5.jpeg" alt="Flowers 5">
+      <p>Flower Image 5</p>
+    </div>
+    <div class="image-item animals" onclick="openLightbox('animal6.jpeg')">
+      <img src="animal6.jpeg" alt="Animals 6">
+      <p>Animal Image 6</p>
+    </div>
+    <div class="image-item flowers" onclick="openLightbox('flower6.jpeg')">
+      <img src="flower6.jpeg" alt="Flowers 6">
+      <p>Flower Image 6</p>
+    </div>
+    <!-- Add more images as needed -->
+  </div>
+
+  <!-- Lightbox container for enlarged image view -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Expanded View">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
